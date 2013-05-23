@@ -1,0 +1,22 @@
+﻿Build started 2013/5/23 5:45:58.
+     1>Project "D:\Projects\C\XBMC\boxee\boxee-mftvrocks\xbmc\lib\libmms\libmms_win32\msvc++\libmms.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching ".\Debug\libmms.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I../src /I"..\..\glib-2.20.4" /I"..\..\glib-2.20.4\glib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D HAVE_CONFIG_H /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TC /wd4002 /wd4018 /wd4244 /wd4996 /analyze- /errorReport:prompt ..\src\mms.c ..\src\mmsh.c ..\src\mmsx.c ..\src\uri.c ..\src\utils.c
+         utils.c
+     1>d:\projects\c\xbmc\boxee\boxee-mftvrocks\xbmc\lib\libmms\glib-2.20.4\glib\gmacros.h(40): fatal error C1083: Cannot open include file: 'stddef.h': No such file or directory
+         uri.c
+     1>d:\projects\c\xbmc\boxee\boxee-mftvrocks\xbmc\lib\libmms\glib-2.20.4\glib\gmacros.h(40): fatal error C1083: Cannot open include file: 'stddef.h': No such file or directory
+         mmsx.c
+     1>d:\projects\c\xbmc\boxee\boxee-mftvrocks\xbmc\lib\libmms\libmms_win32\src\mmsx.c(28): fatal error C1083: Cannot open include file: 'stdlib.h': No such file or directory
+         mmsh.c
+     1>d:\projects\c\xbmc\boxee\boxee-mftvrocks\xbmc\lib\libmms\glib-2.20.4\glib\gmacros.h(40): fatal error C1083: Cannot open include file: 'stddef.h': No such file or directory
+         mms.c
+     1>d:\projects\c\xbmc\boxee\boxee-mftvrocks\xbmc\lib\libmms\glib-2.20.4\glib\gmacros.h(40): fatal error C1083: Cannot open include file: 'stddef.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "D:\Projects\C\XBMC\boxee\boxee-mftvrocks\xbmc\lib\libmms\libmms_win32\msvc++\libmms.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.16
