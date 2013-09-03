@@ -12,10 +12,14 @@ rem If Winrar isn't installed under standard programs, SET the path for WinRAR's
 rem and finally set the options for the final rar.
 rem -------------------------------------------------------------
 rem	CONFIG START
-	IF "%VS100COMNTOOLS%"=="" (
-	  set NET="%ProgramFiles%\Microsoft Visual Studio 10.0\Common7\IDE\VCExpress.exe"
-	) ELSE (
-	  set NET="%VS100COMNTOOLS%\..\IDE\VCExpress.exe"
+	IF EXIST "%VS100COMNTOOLS%\..\IDE\devenv.com" (
+        set NET="%VS100COMNTOOLS%\..\IDE\devenv.com"
+	) ELSE IF EXIST "%VS100COMNTOOLS%\..\IDE\devenv.exe" (
+		set NET="%VS100COMNTOOLS%\..\IDE\devenv.exe"
+	) ELSE IF "%VS100COMNTOOLS%"=="" (
+		set NET="%ProgramFiles%\Microsoft Visual Studio 10.0\Common7\IDE\VCExpress.exe"
+	) ELSE IF EXIST "%VS100COMNTOOLS%\..\IDE\VCExpress.exe" (
+		set NET="%VS100COMNTOOLS%\..\IDE\VCExpress.exe"
 	)
 	IF NOT EXIST %NET% (
 	  set DIETEXT=Visual Studio .NET 2010 Express was not found.
